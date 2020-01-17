@@ -21,4 +21,11 @@ end
 
 def find_min_value(array)
   # Add your solution here
+  min_value = nil
+  array.length.times do|index|
+    if(min_value ==nil || min_value > array[index])
+      min_value = array[index]
+    end
+  end
+  return min_value
 end
