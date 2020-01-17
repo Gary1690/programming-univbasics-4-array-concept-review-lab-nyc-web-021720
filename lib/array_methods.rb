@@ -12,7 +12,11 @@ def find_max_value(array)
   # Add your solution here
   max_value = nil
   array.length.times do|index|
-
+    if(max_value ==nil || max_value < array[index])
+      max_value = array[index]
+    end
+  end
+  return max_value
 end
 
 def find_min_value(array)
